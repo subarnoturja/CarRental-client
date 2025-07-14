@@ -54,11 +54,9 @@ const AddCar = () => {
       }
       else{
         toast.error(data.message)
-        console.log(data.message)
       }
     } catch (error) {
       toast.error(error.message)
-      console.log(error.message)
     }
     finally{
       setIsLoading(false)
